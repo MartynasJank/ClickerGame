@@ -1,0 +1,209 @@
+/***************CSS RESET**************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{max-width: 100%;}
+/***********END OF CSS RESET**************/
+
+body{
+    font-family:  'Oswald', sans-serif;
+}
+
+.inner{
+    width: 90%;
+    margin: auto;
+}
+
+.getCash{
+    width: 200px;
+    height: 200px;
+    background-color: #f1c40f;
+    color: #fff;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 35px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.getCash::selection{
+    background-color: transparent;
+}
+
+.side{    
+    text-align: center;
+    line-height: 90px;
+    font-size: 0;
+}
+
+.side .buy{
+    width: 30%;
+    cursor: pointer;
+    background-color: #1abc9c;
+    color: white;
+    display: inline-block;
+    margin-right: 5%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 24px;
+    vertical-align: top;
+}
+
+.side .buy:last-of-type{
+    margin-right: 0;
+}
+
+.side .buy .text{
+    width: 100%;
+    margin: auto;
+}
+
+.side .buy .slidedown{
+    background-color: #27ae60;
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: all 0.5s;
+    color: transparent;
+    line-height: 80px;
+    opacity: 0;
+}
+
+.side .buy:hover{
+    border-radius: 0px;
+}
+
+.side .buy:hover .slidedown{
+    height: auto;
+    color: white;
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    opacity: 1;
+}
+
+.side .buy::selection{
+    background-color: transparent;
+}
+
+.cheats{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    height: 20px;
+}
+
+.cheats input, .cheats button{
+    display: none;
+    height: 20px;
+    outline: none;
+}
+
+.cheats input{
+    margin-right: 10px;
+}
+
+.cheats button{
+    cursor: pointer;
+}
+
+.cheats:hover input, .cheats:hover button{
+    display: inline-block;
+}
+
+.bellow{
+    font-size: 0;
+    width: 80%;
+    margin: auto;
+}
+
+.bellow *{
+    font-size: 35px;
+}
+
+.bellow .half{
+    width: 50%;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bellow .stats div{
+    font-size: 24px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.bellow .errors{
+    font-size: 24px;
+    vertical-align: top;
+}
+
+.reset{
+    margin: auto;
+    padding: 30px 10px;
+    background-color: red;
+    color: white;
+    width: 10%;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.reset:hover{
+    transform: scale(1.1);
+}
